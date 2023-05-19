@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.bg-container {
+    display: flex;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.vertical-divider {
+    border-left: 1px solid #ccc;
+}
+
+.form-container {
+    backdrop-filter: blur(10px) grayscale(50%);
+    font-weight: 100px;
+    flex: 1;
+    padding-left: 20px;
+    overflow-y: auto;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+    .bg-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .vertical-divider {
+        display: none;
+    }
+
+    .form-container {
+        padding-left: 0;
+    }
+}
